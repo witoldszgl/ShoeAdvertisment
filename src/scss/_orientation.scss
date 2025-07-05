@@ -1,0 +1,27 @@
+@use 'variables';
+
+#orientation-lock {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: variables.$orientation-lock-bg;
+    color: variables.$text-color;
+    z-index: variables.$z-orientation-lock;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+// Media query for landscape orientation on mobile devices
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    #app-container {
+        display: none;
+    }
+
+    #orientation-lock {
+        display: flex;
+    }
+} 

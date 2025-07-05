@@ -1,0 +1,33 @@
+{
+  "name": "shoe-advertisement",
+  "version": "1.0.0",
+  "description": "Interactive advertising website for a fictional shoe product.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "advertising",
+    "interactive",
+    "swiper",
+    "gsap"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "sass": "^1.89.2",
+    "sass-loader": "^16.0.5",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "swiper": "^11.2.10"
+  }
+}
